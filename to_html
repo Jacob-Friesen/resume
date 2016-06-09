@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pug Jacob_Friesen_Resume.pug --obj jacob.json --pretty

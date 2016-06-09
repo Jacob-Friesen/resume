@@ -1,0 +1,12 @@
+{
+  "name": "jacob-friesens-resume",
+  "version": "0.9.0",
+  "description": "Resume generation and update code",
+  "main": "",
+  "dependencies": {
+    "replacestream": "4.0.0"
+  },
+  "devDependencies": {},
+  "author": "Jacob Friesen <jacob@jacobfriesen.com>",
+  "license": "CC BY-ND 4.0 (https://creativecommons.org/licenses/by-nd/4.0/)"
+}

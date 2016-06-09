@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ ($1 = "staging") || ($1 = "development") || ($1 = "test")]]; then
+    echo "Copying resume to staging..."
+    scp Jacob_Friesen_Resume.html <username>@<server>:<location>Jacob_Friesen_Resume.html
+    scp Jacob_Friesen_Resume.pdf <username>@<server>:<location>Jacob_Friesen_Resume.pdf
+    echo "Done Copying."
+elif [[ ($1 = "production") ]]; then
+    echo "Copying resume to production..."
+    scp Jacob_Friesen_Resume.html <username>@<server>:<location>Jacob_Friesen_Resume.html
+    scp Jacob_Friesen_Resume.pdf <username>@<server>:<location>Jacob_Friesen_Resume.pdf
+    echo "Done Copying."
+else
+    echo "Mode not supported, supported modes are:"
+    echo "{staging, development, test, production}"
+fi

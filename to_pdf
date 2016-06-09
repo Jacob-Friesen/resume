@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Replacing content"
+node update_pdf_css.js Jacob_Friesen_Resume.html Jacob_Friesen_Resume.tmp.html
+echo
+echo "Creating the pdf..."
+wkhtmltopdf Jacob_Friesen_Resume.tmp.html Jacob_Friesen_Resume.pdf
+echo "Cleaning up..."
+rm Jacob_Friesen_Resume.tmp.html

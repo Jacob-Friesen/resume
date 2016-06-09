@@ -1,0 +1,333 @@
+doctype html
+
+<!-- (Generated from Pug with pug Jacob_Friesen_Resume.pug --obj jacob.json --watch --pretty) -->
+html(lang="en")
+    head
+        title= general.title
+
+        meta(name="viewport",content="width=device-width, initial-scale=1.0")
+        
+        <!-- CSS is inline because this file must be standalone -->
+        style.
+            /* fonts */
+
+            body {
+                font-family: helvetica, verdana, arial;
+                max-width: 800px;
+                margin: auto;// margin 0 8% for PDF
+            }
+               
+            body, td{         
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            h1{
+                font-size: 32px;
+                line-height: 32px;
+                font-weight: normal;
+            }
+
+            h2{
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: normal;
+            }
+
+            h3{
+                font-size: 18px;
+            }
+
+            hr{
+                height: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+            li{
+                margin-top: 5px;
+            }
+
+            ul{
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+
+            .sub-section{
+                font-weight: normal;
+            }
+
+            .page-eqaulizer{
+                height: 0;
+            }
+
+            table.skills{
+                border: 0;
+                border-spacing: 0;
+                width: 100%;
+            }
+
+                table.skills thead{
+                    font-weight: bold;
+                }
+
+                table.skills tbody tr:nth-child(odd){
+                    background-color: #f9f9f9;
+                }
+
+                table.skills tr.sub-skill{
+                    font-style: italic;
+                }
+
+                table.skills tr td:first-child{
+                    padding: 3px;
+                }
+
+                table.skills tr td:first-child{
+                    width: 50%;
+                }
+
+                table.skills tr td:nth-child(2){
+                    width: 25%;
+                }
+
+            center.header{
+                margin-top: 40px;/* pdf replace */
+                margin-bottom: 20px;/* pdf replace */
+            }
+
+                center.header h1{
+                    margin: 10px 0 5px 0;
+                }
+
+                center.header p{
+                    margin: 0 0 3px 0;
+                    padding: 0;
+                }
+
+            .area{
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+
+                .area h2{
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .area p {
+                    margin-top: 10px;
+                }
+
+                .area .right-shift{
+                    margin-left: 60px;
+                }
+
+                .area .right-shift h3{
+                    margin: 20px 0 10px 0;
+                    padding: 0;
+                }
+
+                .area .right-shift h3:first-child{
+                    margin-top: 5;
+                }
+
+                .area .right-shift .exp-title{
+                    margin: 20px 0 0 0;
+                }
+
+                .area .right-shift .exp-title:first-child{
+                    margin: 10px 0 0 0;
+                }
+
+                .area .right-shift .exp-description{
+                    margin: 7px 0 0 0;
+                    padding: 0;
+                }
+
+                .area .right-shift ul{
+                    margin-top: 5px;
+                }
+
+            .area.volunteering .right-shift .exp-description{
+                margin: 5px 0 0 0;
+                padding: 0;
+            }
+
+            br.mobile-br{
+                display: none;
+            }
+
+            .mobile-erase{
+                display: inline;
+            }
+
+            .desktop-erase{
+                display: none;
+            }
+
+            .no-top-margin {
+                margin-top: 0;
+            }
+
+            .onlywkhtml2 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            @media only screen and (max-device-width: 720px) {
+                body {
+                    max-width: none;
+                    margin: 0 7.5%;
+                    width: 84%;
+                }
+
+                .area ul{
+                    padding-left: 20px;
+                }
+
+                .area .right-shift{
+                    margin-left: 0;
+                }
+
+                br.mobile-br{
+                    display: block;
+                }
+
+                .mobile-erase{
+                    display: none;
+                }
+
+                .desktop-erase{
+                    display: inline;
+                }
+            }
+
+    body
+        mixin link(part, links)
+            if Array.isArray(part)
+                a(href= links[part[0]].address)= links[part[0]].name
+            else
+                span= part + " "
+
+        mixin linkText(point, links)
+            each part in point
+                +link(part, links)
+
+        center.header
+            h1
+                span Jacob Friesen 
+                br.mobile-br
+                span.mobile-erase - 
+                span= general.subTitle
+            p
+                span.desktop-erase &#149;&nbsp;
+                span= general.email + " "
+                span.desktop-erase &#149;&nbsp;
+                br.mobile-br
+                span &#149;&nbsp;
+                a(href= links.mainWebsite.address)= links.mainWebsite.name + " "
+                span.desktop-erase &#149;&nbsp;
+
+            p
+                span.desktop-erase &#149;&nbsp;
+                span=general.address.street + ", " + general.address.city + ", " + general.address.state._long + ", " + general.address.postal + " "
+                span &#149; 
+                br.mobile-br
+                span.desktop-erase &#149;&nbsp;
+                a.desktop-erase(href= "tel:" + general.phone.replace(/-/g, ''))= general.phone
+                span.mobile-erase= general.phone
+                span.desktop-erase &nbsp;&#149;&nbsp;
+
+        // profile
+        .area.no-top-margin
+            h2 Profile
+            ul
+                each point in profile
+                    if Array.isArray(point)
+                        li
+                            +linkText(point, links)
+                    else
+                        li= point
+
+        // skills
+        .area
+            h2 Skills
+            p
+                +linkText(skills.summary, links)
+
+            .right-shift
+                each section in skills.sections
+                    h3= section.title
+                    table.skills
+                        thead
+                            td Skill
+                            td Years
+                            td Level
+                        tbody
+                            each skill in section.skills
+                                tr
+                                    td= skill.name
+                                    td= skill.time[0] + skill.time[1]
+                                    td= skill.level
+                                if Array.isArray(skill.subSkills)
+                                    each subSkill in skill.subSkills
+                                        tr.sub-skill
+                                            td
+                                                span &nbsp;&#149;&nbsp;
+                                                span= subSkill.name
+                                            td= subSkill.time[0] + subSkill.time[1]
+                                            td= subSkill.level
+
+        // work experience                               
+        .area.experience
+            h2 Work Experience
+            p
+                +linkText(workExperience.summary, links)
+
+            .right-shift
+                each job in workExperience.jobs
+                    p.exp-title
+                        b
+                            span= job.dates + " "
+                            span.sub-section= job.title
+                        span ,
+                        +link(job.link, links)
+                    p.exp-description= job.description
+                    ul
+                        each point in job.points
+                            li= point
+
+        // education
+        .area
+            h2 Education
+            .right-shift
+                each school in education
+                    p.exp-title
+                        b= school.title
+                    if school.points
+                        ul
+                            each point in school.points
+                                li= point
+
+        // volunteering
+        .area.volunteering
+            h2 Volunteering
+            .right-shift
+                each experience in volunteering
+                    .exp-title
+                        b
+                            span= experience.dates + " "
+                            span.sub-section= experience.position
+                    .exp-description
+                        b= experience.place
+                    if experience.points
+                        ul
+                            each point in experience.points
+                                li= point
+
+        // other (called interests before)
+        .area.onlywkhtml
+            h2 Interests
+            p.onlywkhtml
+                +linkText(interests, links)

@@ -25,6 +25,7 @@
 
         "github": {
             "address": "https://github.com/Jacob-Friesen",
+            "username": "Jacob-Friesen",
             "name": "Github"
         },
 
@@ -41,6 +42,11 @@
         "linkedin": {
             "address": "http://www.linkedin.com/in/jacobfriesen",
             "name": "LinkedIn Profile"
+        },
+
+        "twitter": {
+            "address": "https://twitter.com/Jacob_Friesen",
+            "name": "Jacob_Friesen"
         },
 
         "verias": {
@@ -65,6 +71,16 @@
         ["Creator of the", ["blog"], ", a popular JavaScript blog with over 9000 followers on Tumblr. All original content."],
         "Bachelor of Computer Science (Honours) graduate."
     ],
+
+    "summary": {
+        "main": "I'm a Software Developer who works at VeriAS, currently designing and developing their new UI. I specialize in JavaScript and client side coding, but I also work and have experience with the full web stack.",
+        "points": [
+            "JavaScript - client side, server side (Node.js), mobile",
+            "HTML/CSS (and various preprocessors)",
+            "Unix environments (e.g. Linux, Mac OS X)",
+            "Full stack development (Node, Ruby on Rails, etc.)"
+        ]
+    },
 
     "skills": {
         "summary": ["This is just a summary of my core skills, for full details ", ["websiteSkills"], "."],
@@ -271,7 +287,7 @@
             "points": [
                 "Every meeting I started the meeting and introduced the Toastmaster.",
                 "Participated in decision making meetings with other club officers.",
-                "Helped reduce costs by developing a strategy to bulk print certain materials."
+                "Helped reduce costs by developing a strategy to bulk print certian materials."
             ]
         }
     ],

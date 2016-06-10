@@ -2,199 +2,200 @@
 <html lang="en">
   <head>
     <title>Jacob Friesen Front End Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- CSS is inline because this file must be standalone --><style type="text/css">body {
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- CSS is inline because this file must be standalone --><style type="text/css">.resume-body {
     font-family: helvetica, verdana, arial;
     max-width: 800px;
     margin: auto;// margin 0 8% for PDF
 }
    
-body, td{         
+.resume-body,
+.resume-body td {         
     font-size: 16px;
     line-height: 20px;
 }
 
-h1{
+.resume-body h1 {
     font-size: 32px;
     line-height: 32px;
     font-weight: normal;
 }
 
-h2{
+.resume-body h2 {
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
 }
 
-h3{
+.resume-body h3 {
     font-size: 18px;
 }
 
-hr{
+.resume-body hr {
     height: 0;
     margin: 0;
     padding: 0;
 }
 
-li{
+.resume-body li {
     margin-top: 5px;
 }
 
-ul{
+.resume-body ul {
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-.sub-section{
+.resume-body .sub-section {
     font-weight: normal;
 }
 
-.page-eqaulizer{
+.resume-body .page-eqaulizer {
     height: 0;
 }
 
-table.skills{
+.resume-body table.skills {
     border: 0;
     border-spacing: 0;
     width: 100%;
 }
 
-    table.skills thead{
+    .resume-body table.skills thead {
         font-weight: bold;
     }
 
-    table.skills tbody tr:nth-child(odd){
+    .resume-body table.skills tbody tr:nth-child(odd) {
         background-color: #f9f9f9;
     }
 
-    table.skills tr.sub-skill{
+    .resume-body table.skills tr.sub-skill {
         font-style: italic;
     }
 
-    table.skills tr td:first-child{
+    .resume-body table.skills tr td:first-child {
         padding: 3px;
     }
 
-    table.skills tr td:first-child{
+    .resume-body table.skills tr td:first-child {
         width: 50%;
     }
 
-    table.skills tr td:nth-child(2){
+    .resume-body table.skills tr td:nth-child(2) {
         width: 25%;
     }
 
-center.header{
+.resume-body center.header{
     margin-top: 40px;/* pdf replace */
     margin-bottom: 20px;/* pdf replace */
 }
 
-    center.header h1{
+    .resume-body center.header h1 {
         margin: 10px 0 5px 0;
     }
 
-    center.header p{
+    .resume-body center.header p {
         margin: 0 0 3px 0;
         padding: 0;
     }
 
-.area{
+.resume-body .area {
     margin-top: 10px;
     padding-bottom: 10px;
 }
 
-    .area h2{
+    .resume-body .area h2 {
         margin: 0;
         padding: 0;
     }
 
-    .area p {
+    .resume-body .area p {
         margin-top: 10px;
     }
 
-    .area .right-shift{
+    .resume-body .area .right-shift {
         margin-left: 60px;
     }
 
-    .area .right-shift h3{
+    .resume-body .area .right-shift h3 {
         margin: 20px 0 10px 0;
         padding: 0;
     }
 
-    .area .right-shift h3:first-child{
+    .resume-body .area .right-shift h3:first-child {
         margin-top: 5;
     }
 
-    .area .right-shift .exp-title{
+    .resume-body .area .right-shift .exp-title {
         margin: 20px 0 0 0;
     }
 
-    .area .right-shift .exp-title:first-child{
+    .resume-body .area .right-shift .exp-title:first-child {
         margin: 10px 0 0 0;
     }
 
-    .area .right-shift .exp-description{
+    .resume-body .area .right-shift .exp-description {
         margin: 7px 0 0 0;
         padding: 0;
     }
 
-    .area .right-shift ul{
+    .resume-body .area .right-shift ul {
         margin-top: 5px;
     }
 
-.area.volunteering .right-shift .exp-description{
+.resume-body .area.volunteering .right-shift .exp-description {
     margin: 5px 0 0 0;
     padding: 0;
 }
 
-br.mobile-br{
+.resume-body br.mobile-br{
     display: none;
 }
 
-.mobile-erase{
+.resume-body .mobile-erase{
     display: inline;
 }
 
-.desktop-erase{
+.resume-body .desktop-erase{
     display: none;
 }
 
-.no-top-margin {
+.resume-body .no-top-margin {
     margin-top: 0;
 }
 
-.onlywkhtml2 {
+.resume-body .onlywkhtml2 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 @media only screen and (max-device-width: 720px) {
-    body {
+    .resume-body {
         max-width: none;
         margin: 0 7.5%;
         width: 84%;
     }
 
-    .area ul{
+    .resume-body .area ul{
         padding-left: 20px;
     }
 
-    .area .right-shift{
+    .resume-body .area .right-shift{
         margin-left: 0;
     }
 
-    br.mobile-br{
+    .resume-body br.mobile-br{
         display: block;
     }
 
-    .mobile-erase{
+    .resume-body .mobile-erase{
         display: none;
     }
 
-    .desktop-erase{
+    .resume-body .desktop-erase{
         display: inline;
     }
 }</style>
   </head>
-  <body>
+  <body class="resume-body">
     <center class="header">
       <h1><span>Jacob Friesen </span><br class="mobile-br"><span class="mobile-erase">- </span><span>Front End Developer</span></h1>
       <p><span class="desktop-erase">&#149;&nbsp;</span><span>jacob@jacobfriesen.com </span><span class="desktop-erase">&#149;&nbsp;</span><br class="mobile-br"><span>&#149;&nbsp;</span><a href="http://jacobfriesen.com">jacobfriesen.com </a><span class="desktop-erase">&#149;&nbsp;</span></p>

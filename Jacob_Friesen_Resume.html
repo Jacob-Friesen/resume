@@ -1,204 +1,198 @@
-<!DOCTYPE html><!-- (Generated from Jade with jade Jacob_Friesen_Resume.jade --obj jacob.json --watch --pretty) -->
+<!DOCTYPE html><!-- (Generated from Pug with pug Jacob_Friesen_Resume.pug --obj jacob.json --watch --pretty) -->
 <html lang="en">
   <head>
     <title>Jacob Friesen Front End Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- CSS is inline because this file must be standalone -->
-    <style>
-      /* fonts */
-      
-      body {
-          font-family: helvetica, verdana, arial;
-          max-width: 800px;
-          margin: auto;// margin 0 8% for PDF
-      }
-         
-      body, td{         
-          font-size: 16px;
-          line-height: 20px;
-      }
-      
-      h1{
-          font-size: 32px;
-          line-height: 32px;
-          font-weight: normal;
-      }
-      
-      h2{
-          font-size: 24px;
-          line-height: 24px;
-          font-weight: normal;
-      }
-      
-      h3{
-          font-size: 18px;
-      }
-      
-      hr{
-          height: 0;
-          margin: 0;
-          padding: 0;
-      }
-      
-      li{
-          margin-top: 5px;
-      }
-      
-      ul{
-          margin-top: 10px;
-          margin-bottom: 0px;
-      }
-      
-      .sub-section{
-          font-weight: normal;
-      }
-      
-      .page-eqaulizer{
-          height: 0;
-      }
-      
-      table.skills{
-          border: 0;
-          border-spacing: 0;
-          width: 100%;
-      }
-      
-          table.skills thead{
-              font-weight: bold;
-          }
-      
-          table.skills tbody tr:nth-child(odd){
-              background-color: #f9f9f9;
-          }
-      
-          table.skills tr.sub-skill{
-              font-style: italic;
-          }
-      
-          table.skills tr td:first-child{
-              padding: 3px;
-          }
-      
-          table.skills tr td:first-child{
-              width: 50%;
-          }
-      
-          table.skills tr td:nth-child(2){
-              width: 25%;
-          }
-      
-      center.header{
-          margin-top: 40px;/* pdf replace */
-          margin-bottom: 20px;/* pdf replace */
-      }
-      
-          center.header h1{
-              margin: 10px 0 5px 0;
-          }
-      
-          center.header p{
-              margin: 0 0 3px 0;
-              padding: 0;
-          }
-      
-      .area{
-          margin-top: 10px;
-          padding-bottom: 10px;
-      }
-      
-          .area h2{
-              margin: 0;
-              padding: 0;
-          }
-      
-          .area p {
-              margin-top: 10px;
-          }
-      
-          .area .right-shift{
-              margin-left: 60px;
-          }
-      
-          .area .right-shift h3{
-              margin: 20px 0 10px 0;
-              padding: 0;
-          }
-      
-          .area .right-shift h3:first-child{
-              margin-top: 5;
-          }
-      
-          .area .right-shift .exp-title{
-              margin: 20px 0 0 0;
-          }
-      
-          .area .right-shift .exp-title:first-child{
-              margin: 10px 0 0 0;
-          }
-      
-          .area .right-shift .exp-description{
-              margin: 7px 0 0 0;
-              padding: 0;
-          }
-      
-          .area .right-shift ul{
-              margin-top: 5px;
-          }
-      
-      .area.volunteering .right-shift .exp-description{
-          margin: 5px 0 0 0;
-          padding: 0;
-      }
-      
-      br.mobile-br{
-          display: none;
-      }
-      
-      .mobile-erase{
-          display: inline;
-      }
-      
-      .desktop-erase{
-          display: none;
-      }
-      
-      .no-top-margin {
-          margin-top: 0;
-      }
-      
-      .onlywkhtml2 {
-          margin-bottom: 0;
-          padding-bottom: 0;
-      }
-      
-      @media only screen and (max-device-width: 720px) {
-          body {
-              max-width: none;
-              margin: 0 7.5%;
-              width: 84%;
-          }
-      
-          .area ul{
-              padding-left: 20px;
-          }
-      
-          .area .right-shift{
-              margin-left: 0;
-          }
-      
-          br.mobile-br{
-              display: block;
-          }
-      
-          .mobile-erase{
-              display: none;
-          }
-      
-          .desktop-erase{
-              display: inline;
-          }
-      }
-      
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- CSS is inline because this file must be standalone --><style type="text/css">body {
+    font-family: helvetica, verdana, arial;
+    max-width: 800px;
+    margin: auto;// margin 0 8% for PDF
+}
+   
+body, td{         
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1{
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+h3{
+    font-size: 18px;
+}
+
+hr{
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin-top: 5px;
+}
+
+ul{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.sub-section{
+    font-weight: normal;
+}
+
+.page-eqaulizer{
+    height: 0;
+}
+
+table.skills{
+    border: 0;
+    border-spacing: 0;
+    width: 100%;
+}
+
+    table.skills thead{
+        font-weight: bold;
+    }
+
+    table.skills tbody tr:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+
+    table.skills tr.sub-skill{
+        font-style: italic;
+    }
+
+    table.skills tr td:first-child{
+        padding: 3px;
+    }
+
+    table.skills tr td:first-child{
+        width: 50%;
+    }
+
+    table.skills tr td:nth-child(2){
+        width: 25%;
+    }
+
+center.header{
+    margin-top: 40px;/* pdf replace */
+    margin-bottom: 20px;/* pdf replace */
+}
+
+    center.header h1{
+        margin: 10px 0 5px 0;
+    }
+
+    center.header p{
+        margin: 0 0 3px 0;
+        padding: 0;
+    }
+
+.area{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .area h2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .area p {
+        margin-top: 10px;
+    }
+
+    .area .right-shift{
+        margin-left: 60px;
+    }
+
+    .area .right-shift h3{
+        margin: 20px 0 10px 0;
+        padding: 0;
+    }
+
+    .area .right-shift h3:first-child{
+        margin-top: 5;
+    }
+
+    .area .right-shift .exp-title{
+        margin: 20px 0 0 0;
+    }
+
+    .area .right-shift .exp-title:first-child{
+        margin: 10px 0 0 0;
+    }
+
+    .area .right-shift .exp-description{
+        margin: 7px 0 0 0;
+        padding: 0;
+    }
+
+    .area .right-shift ul{
+        margin-top: 5px;
+    }
+
+.area.volunteering .right-shift .exp-description{
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+br.mobile-br{
+    display: none;
+}
+
+.mobile-erase{
+    display: inline;
+}
+
+.desktop-erase{
+    display: none;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.onlywkhtml2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-device-width: 720px) {
+    body {
+        max-width: none;
+        margin: 0 7.5%;
+        width: 84%;
+    }
+
+    .area ul{
+        padding-left: 20px;
+    }
+
+    .area .right-shift{
+        margin-left: 0;
+    }
+
+    br.mobile-br{
+        display: block;
+    }
+
+    .mobile-erase{
+        display: none;
+    }
+
+    .desktop-erase{
+        display: inline;
+    }
+}</style>
   </head>
   <body>
     <center class="header">
@@ -425,7 +419,7 @@
         <ul>
           <li>Every meeting I started the meeting and introduced the Toastmaster.</li>
           <li>Participated in decision making meetings with other club officers.</li>
-          <li>Helped reduce costs by developing a strategy to bulk print certain materials.</li>
+          <li>Helped reduce costs by developing a strategy to bulk print certian materials.</li>
         </ul>
       </div>
     </div>

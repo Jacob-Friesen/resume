@@ -54,14 +54,14 @@
             "name": "VeriAS"
         },
 
-        "siftlogic": {
-            "address": "http://siftlogic.com",
-            "name": "SiftLogic"
-        },
-
         "canadaDrugs": {
             "address": "http://canadadrugs.com",
             "name": "CanadaDrugs.com"
+        },
+
+        "iders": {
+            "address": "https://www.linkedin.com/company/1037902?trk=prof-exp-company-name",
+            "name": "Iders"
         }
     },
 
@@ -219,25 +219,15 @@
         "summary": ["For older work experiences, see my", ["linkedin"], "."],
         "jobs": [
             {
-                "dates": "2014 October - Current",
+                "dates": "2013 August - Current",
                 "title": "Software Engineer",
                 "link": ["verias"],
                 "description": "I design and develop interfaces across multiple products (including architecture).",
                 "points": [
-                    "Develop the single page UI structure, automation, testing and other essential aspects. Using the JavaScript MVC framework Angular.js.",
+                    "Develop the single page UI structure, automation, testing and other essential aspects. Using the JavaScript MVC framework Angular.js and supported by Node.js tasks via Gulp.js (Switched from Grunt.js).",
                     "Design the user experience and help design the general user processes across the various projects.",
-                    "Ensure that the visual designs are appealing and usable across multiple devices."
-                ]
-            },
-            {
-                "dates": "2013 August - 2014 October",
-                "title": "Software Engineer",
-                "link": ["siftlogic"],
-                "description": "Implemented a new front end for Siftlogic's customers reducing development time by at least half and improving user experience to the point that there customers no longer called in with instructions on how to do an operation.",
-                "points": [
-                    "Developed UI structure, automation, testing and other essential aspects for the new single page UI.",
-                    "Using Angular.js, tested with Jasmine.js and Protractor.js which runs on Selenium. I have created a Selenium Grid to test across multiple browsers and operating systems.",
-                    "Developed HTTP and FTP API connection libraries for users who prefer CLI interfaces in .Net, PHP, and Node.js."
+                    "Ensure that the visual designs are appealing and usable across multiple devices.",
+                    "Using Angular.js, tested with Jasmine.js and Protractor.js which runs on Selenium. Created a CI server (Jenkins based) to test across multiple browsers and operating systems among other functions."
                 ]
             },
             {
@@ -249,6 +239,17 @@
                     "Using HTML, SCSS (CSS preprocessor), and jQuery, I designed and updated many front end interfaces.",
                     "Implemented server code in Ruby on Rails which connected to a MySQL database.",
                     "Improved a small HR application which had a Twitter Bootstrap interface and a Ruby on Rails backend."
+                ]
+            },
+            {
+                "dates": "2011 August - December",
+                "title": "Co-op Work Term 2 Web Developer",
+                "link": ["iders"],
+                "description": "Added a new Inventory Location Management system to the current Information Management System. This new system includes 5 different sections which all had different hardware and software environments.",
+                "points": [
+                    "Used Ext JS, AJAX and some HTML/CSS to design the front end interfaces, with back end code mainly in Python with some JavaScript (Titanium Studio Libraries) and ZPL.",
+                    "Additionally, improved system performance in general by a factor of 2 and added a way to save all window placement state between sessions.",
+                    "All work was done in Ubuntu (Linux variant)."
                 ]
             }
         ]

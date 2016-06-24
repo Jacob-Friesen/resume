@@ -220,6 +220,8 @@
         "jobs": [
             {
                 "dates": "2013 August - Current",
+                "startDate": "August 2013",
+                "endDate": "Current",
                 "title": "Software Engineer",
                 "link": ["verias"],
                 "description": "I design and develop interfaces across multiple products (including architecture).",
@@ -232,6 +234,8 @@
             },
             {
                 "dates": "2012 May - August",
+                "startDate": "May 2012",
+                "endDate": "August 2012",
                 "title": "Co-op Work Term 3 Web Developer",
                 "link": ["canadaDrugs"],
                 "description": "Improved Panda, the internal web application. Panda managed the business from all of the pharmacy sites. Worked in an Agile Environment.",
@@ -243,6 +247,8 @@
             },
             {
                 "dates": "2011 August - December",
+                "startDate": "August 2011",
+                "endDate": "December 2011",
                 "title": "Co-op Work Term 2 Web Developer",
                 "link": ["iders"],
                 "description": "Added a new Inventory Location Management system to the current Information Management System. This new system includes 5 different sections which all had different hardware and software environments.",

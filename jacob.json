@@ -92,6 +92,7 @@
                         "name": "JavaScript",
                         "time": ["5", "+"],
                         "level": "Expert",
+                        "summary": "I have used JavaScript in client side (browser), server side (Node.js) and mobile (Hybrid apps) environments. I also know multiple paradigms of JavaScript including Object Orientation and Functional Programming. Additionally, I have unit tested JavaScript in multiple libraries. Finally, I have done various tech talks on JavaScript to audiences of over 80 people.",
                         "subSkills": [
                             {
                                 "name": "pure",
@@ -128,37 +129,44 @@
                     {
                         "name": "HTML",
                         "time": ["8", "+"],
-                        "level": "Advanced"
+                        "level": "Advanced",
+                        "summary": "I have used HTML in multiple environments like browsers and hybrid mobile applications. I know how to do modern grid-style layouts as well as how to support and convert from legacy table based layouts. Finally, I have used many dynamically generated HTML languages like HAML, JSP and and Jade (now called Pug)."
                     },
                     {
                         "name": "CSS (Including Preprocessors)",
                         "time": ["8", "+"],
-                        "level": "Advanced"
+                        "level": "Advanced",
+                        "summary": "I have created many types of layouts ranging from complex data driven applications with complex grids to simple websites. This includes responsive designs for mobile phones and tablets. I know of most modern CSS techniques including CSS3. I have also used mutliple CSS preprocessors such as SCSS."
                     },
                     {
                         "name": "Java",
                         "time": ["4", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I have worked on multiple projects across previous jobs and other projects. I know how to code Java in a standard Object Orieted way and have worked with Java Unit testing (Junit)."
                     },
                     {
                         "name": "Ruby On Rails",
                         "time": ["1", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I used this at one previous intern job for 4 months and have used it across a few side projects. I know how to write code for all layers including the views, controllers and models. I have also done testing using RSpec."
                     },
                     {
                         "name": "Python",
                         "time": ["2", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "Python is a language that keeps coming up for small, but important parts of almost every work experience that I have had. This includes a 4 month internship of doing backend Python development for the Django framework. Like other languages, I have also had experience with unit testing in the form of the unitest framework."
                     },
                     {
                         "name": "SQL",
                         "time": ["1.5", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I have used this across multiple jobs and projects. I know how to create and manage databases including how to write pure SQL statements to update, create and delete data."
                     },
                     {
                         "name": "Erlang",
                         "time": ["0.5", "+"],
-                        "level": "Basic"
+                        "level": "Basic",
+                        "summary": "I have created a small project at work to monitor all of our services that formed the core of a new larger application now essential to the business. I know about Functional Programming and various OTP (Open Telecom Platform) principles."
                     }
                 ]
             },
@@ -168,27 +176,32 @@
                     {
                         "name": "Apache HTTP Server",
                         "time": ["2", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I have configured and run Apache servers across multiple Operating Systems. I have also dealt with issues like using multiple different websites on different ports using the same Apache server."
                     },
                     {
                         "name": "Gulp.js (Task Runner)",
                         "time": ["1", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I converted our entire UI build system at VeriAs from Grunt.js to Gulp.js. I am familiar with writing multiple types of tasks for it like complex builds that do minification, concatenation and so on."
                     },
                     {
                         "name": "Grunt.js (Task Runner)",
                         "time": ["2", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I created build systems for multiple projects while at VeriAs. This included creating complex tasks such as builds that do minification, concatenation and so on."
                     },
                     {
                         "name": "Git (and Github)",
                         "time": ["3", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I now use Git and Github for all my work and side projects. I know how to create organized branching and commit strategies used to support multiple developers working on different areas of a project at once. I have also managed projects on Github and have created the varios Pull Request and Continuous Integration strategies."
                     },
                     {
                         "name": "MySQL",
                         "time": ["1", "+"],
-                        "level": "Intermediate"
+                        "level": "Basic",
+                        "summary": "I have created and administered simple databases for various side projects."
                     }
                 ]
             },
@@ -198,17 +211,20 @@
                     {
                         "name": "Linux Admin",
                         "time": ["3", "+"],
-                        "level": "Advanced"
+                        "level": "Advanced",
+                        "summary": "Most of my work experiences involved a Linux environment with a focus towards command line driven development. I know how to setup and manage Linux based servers using tools like Screen and how to create automated scripts in Bash to do various tasks. For example, I created a script to install and modify the network connections for a complex distributed system assuming no dependencies."
                     },
                     {
                         "name": "Mac OS X Admin",
                         "time": ["2", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I have developed in various command line heavy technologies on OS X. I also have a good knowledge of various UNIX tools like Bash gained from my Linux experience."
                     },
                     {
                         "name": "Windows Admin",
                         "time": ["9", "+"],
-                        "level": "Intermediate"
+                        "level": "Intermediate",
+                        "summary": "I have done some development in Windows using Java and C#. I have also had to write .bat scripts and do basic admin tasks like managing firewalls in Windows."
                     }
                 ]
             }

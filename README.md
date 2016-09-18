@@ -18,5 +18,6 @@ Process (UNIX Only)
 Install
 -------
 
-    npm install pug-cli -g
+    # Note that the wrong version is installed when you don't manually specify like below
+    npm install pug-cli@1.0.0-alpha1 -g
     # Install wkhtmltopdf from http://wkhtmltopdf.org/downloads.html

@@ -236,7 +236,7 @@
                         "time": ["1", "+"],
                         "level": "Intermediate",
                         "summary": "I know how to create Docker images from scatch make them communicate and debug their containers."
-                    },
+                    }
                 ]
             }
         ]

@@ -4,6 +4,15 @@ This contains all the contents and commands to generate Jacob Friesen's resume f
 
 Compiled files are kept due to convenience and their small size.
 
+Install
+-------
+```
+npm install
+npm install -g pug-cli
+```
+
+Install wkhtmltopdf from http://wkhtmltopdf.org/downloads.html
+
 Process (UNIX Only)
 -------------------
     ./to_html
@@ -14,10 +23,3 @@ Process (UNIX Only)
 2. Translate HTML into PDF
 3. Copy the resume to a server location that stores the resume
   * Fill in the templated content from to_server.template to get this file.
-
-Install
--------
-
-    # Note that the wrong version is installed when you don't manually specify like below
-    npm install pug-cli@1.0.0-alpha1 -g
-    # Install wkhtmltopdf from http://wkhtmltopdf.org/downloads.html
